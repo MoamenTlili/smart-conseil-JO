@@ -35,11 +35,13 @@ ObservationDay/
 └── README.md             # Documentation
 
 
-## How to run
+## 1. How to run
 Launch the FastAPI server:
 - **uvicorn app:app --reload
 - **Test the API: Open your browser at http://localhost:8000/docs. Use the Swagger UI to send a POST request to the /predict endpoint.
 
+### 2. Containerized Execution (Docker)
+*Note: Ensure any local FastAPI servers are stopped before running Docker to avoid port conflicts.*
 To run the application in a fully isolated and scalable environment:
 - **Build the Docker Image:** docker build -t harassment-api.
 - **Run the container:** docker run -p 8000:8000 harassment-api
